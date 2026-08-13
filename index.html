@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>إلى عبدالله ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Great+Vibes&display=swap');
+:root{--pink:#eaa4b5;--deep:#9d526a;--cream:#fff7f5;--soft:#f8e4e2;--text:#543b43}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#f6e6df,#fff9f6);color:var(--text);font-family:Cairo,sans-serif;overflow-x:hidden}
+.hidden{display:none!important}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.heart{position:absolute;color:#eaa4b5;opacity:.45;animation:float 8s linear infinite;font-size:18px}
+@keyframes float{from{transform:translateY(110vh) rotate(0deg)}to{transform:translateY(-15vh) rotate(360deg)}}
+.lock{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;position:relative;z-index:2}
+.lock-card{width:min(420px,100%);background:rgba(255,248,246,.92);border-radius:32px;padding:34px 24px;text-align:center;box-shadow:0 15px 45px #a35f6d22;border:1px solid #fff}
+.lock-icon{font-size:55px;margin-bottom:10px}
+h1{margin:0 0 8px;font-size:27px;color:#7e4657}
+.subtitle{margin:0 0 24px;color:#9a777e}
+input{width:100%;border:1px solid #ead0d3;background:white;border-radius:17px;padding:15px;text-align:center;font-size:18px;outline:none;color:#60404a}
+button{border:0;background:linear-gradient(135deg,#d97e99,#a95370);color:white;border-radius:18px;padding:14px 25px;font-size:17px;font-family:inherit;cursor:pointer;box-shadow:0 8px 20px #a9537030}
+.error{color:#b64262;margin-top:10px;min-height:24px}
+main{position:relative;z-index:1;width:min(720px,100%);margin:auto;padding-bottom:55px}
+.hero{text-align:center;padding:38px 18px 20px}
+.script{font-family:"Great Vibes",cursive;font-size:52px;color:#a95770;direction:ltr}
+.hero p{margin:4px 0;color:#8b6a72}
+.card{margin:14px 16px;background:rgba(255,250,249,.91);border:1px solid #fff;border-radius:27px;padding:22px;box-shadow:0 12px 35px #a35f6d1a}
+.card-title{font-size:19px;font-weight:700;color:#87495d;text-align:center;margin-bottom:16px}
+.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.unit{background:#fff4f3;border-radius:17px;padding:14px 4px;text-align:center}
+.num{font-size:27px;font-weight:700;color:#a0526a}
+.label{font-size:12px;color:#9b7a82}
+.message{line-height:2.15;font-size:16px;text-align:right;white-space:pre-line}
+.photo-wrap{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;background:#ead5d2}
+.photo-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-caption{text-align:center;color:#9c6b78;margin-top:10px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.gallery img{width:100%;aspect-ratio:1/1.18;object-fit:cover;border-radius:18px;box-shadow:0 5px 18px #8c4e5a22}
+.music{display:flex;align-items:center;gap:12px;background:#fff2f1;border-radius:20px;padding:13px}
+.disc{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,#fff 0 8%,#d989a0 9% 18%,#b85e7a 19% 100%);animation:spin 5s linear infinite;animation-play-state:paused;flex:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.music-info{flex:1;min-width:0}
+.music-title{font-weight:700}
+.music-small{font-size:12px;color:#a17882}
+.play{width:44px;height:44px;border-radius:50%;padding:0;font-size:18px}
+.audio-note{font-size:12px;color:#a17882;text-align:center;margin-top:9px}
+.timeline{position:relative;padding-right:22px}
+.timeline:before{content:"";position:absolute;right:7px;top:0;bottom:0;width:2px;background:#e8b7c2}
+.t-item{position:relative;margin:0 0 18px}
+.t-item:before{content:"♥";position:absolute;right:-1px;transform:translateX(50%);background:#fff7f5;color:#c5657e;font-size:14px}
+.t-item p{margin:0;padding-right:22px;line-height:1.8}
+.footer{text-align:center;color:#9d7480;padding:20px;font-size:14px}
+@media(max-width:430px){.counter{gap:5px}.num{font-size:23px}.card{margin:12px}.message{font-size:15px}.script{font-size:48px}}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+
+<section id="lock" class="lock">
+  <div class="lock-card">
+    <div class="lock-icon">🔐❤️</div>
+    <h1>الهدية دي لعبدالله بس</h1>
+    <p class="subtitle">اكتب الباسورد عشان تفتح الهدية يا حبيبي</p>
+    <input id="password" type="password" placeholder="الباسورد" autocomplete="off">
+    <button onclick="unlock()">افتح الهدية ❤️</button>
+    <div id="error" class="error"></div>
+  </div>
+</section>
+
+<main id="site" class="hidden">
+  <section class="hero">
+    <div class="script">Abdallah</div>
+    <p>إلى أول وآخر وأهم اختيار في حياتي ❤️</p>
+  </section>
+
+  <section class="card">
+    <div class="card-title">💗 سوا من 07-07-2026 💗</div>
+    <div class="counter">
+      <div class="unit"><div class="num" id="days">0</div><div class="label">يوم</div></div>
+      <div class="unit"><div class="num" id="hours">0</div><div class="label">ساعة</div></div>
+      <div class="unit"><div class="num" id="minutes">0</div><div class="label">دقيقة</div></div>
+      <div class="unit"><div class="num" id="seconds">0</div><div class="label">ثانية</div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card-title">💌 ليك أنت</div>
+    <div class="message">أنا عاوزاك تكون عارف إن انت هتفضل أول وآخر وأهم اختيار صح أنا اخترته في حياتي، وإن أنا عمري ما هندم دقيقة على حبي ليك.
+
+وإني دايمًا واثقة فيك وفي حبك ليا وفخورة بكل حاجة بتعملها، وهفضل في ضهرك طول العمر.
+
+وهتفضل أحلى وأنجح وأشطر راجل شوفته في حياتي كلها، والراجل الوحيد اللي أقدر أثق فيه ومخافش وأنا معاه من أي حاجة.
+
+وإني بجد بحبك أوي أكتر من أي حاجة في الدنيا، وإني مش عاوزة أي حاجة في دنيتي غيرك أنت بس.
+
+ولو رجع بيا الزمن مليون مرة، أنا هختارك أنت اللي أكمل بيك بقيت حياتي كلها، واختار إني أعيش عمري كله في حضنك.
+
+يا عوضي الحلو في الدنيا، يا هدية ربنا ليا، يا كل الحلو اللي كان متحوشلي، والتعويض بعد كل الوحش اللي شوفته، واللي ورالي الهنا والسعادة والحب والحنية والفرحة اللي في الدنيا كلها، وادلعت على إيديه.
+
+أنا بحبك أوي أوي أوي يا نور عين شوشو ♥️</div>
+  </section>
+
+  <section class="card">
+    <div class="card-title">🎵 أغنيتنا</div>
+    <div class="music">
+      <div class="disc" id="disc"></div>
+      <div class="music-info"><div class="music-title">مطمنة — أنغام</div><div class="music-small">اضغطي تشغيل ❤️</div></div>
+      <button class="play" id="play">▶</button>
+    </div>
+    <audio id="audio" preload="metadata">
+      <source src="assets/motmana-angham.mp3" type="audio/mpeg">
+    </audio>
+    <div class="audio-note" id="audioNote">لو هترفعِي الموقع أضيفي ملف الأغنية باسم <b>motmana-angham.mp3</b> داخل مجلد assets.</div>
+  </section>
+
+  <section class="card">
+    <div class="card-title">📸 ذكرياتنا</div>
+    <div class="gallery">
+      <img src="assets/photo1.jpeg" alt="ذكرى 1">
+      <img src="assets/photo2.jpeg" alt="ذكرى 2">
+      <img src="assets/photo3.jpeg" alt="ذكرى 3">
+      <img src="assets/photo4.jpeg" alt="ذكرى 4">
+      <img src="assets/photo5.jpeg" alt="ذكرى 5">
+      <img src="assets/photo6.jpeg" alt="ذكرى 6">
+      <img src="assets/photo7.jpeg" alt="ذكرى 7">
+      <img src="assets/photo8.jpeg" alt="ذكرى 8">
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card-title">🌷 ولسه البداية</div>
+    <div class="timeline">
+      <div class="t-item"><p><b>07 يوليو 2026</b><br>اليوم اللي بدأت فيه حكايتنا بالشكل اللي نفسي تكمل عليه العمر كله.</p></div>
+      <div class="t-item"><p><b>كل يوم بعده</b><br>اختيار جديد لنفس الشخص، وحب بيكبر أكتر.</p></div>
+      <div class="t-item"><p><b>وكل اللي جاي</b><br>نفسي نعيشه سوا، يوم ورا يوم، وإيدك في إيدي ❤️</p></div>
+    </div>
+  </section>
+
+  <div class="footer">Made with all my heart, for Abdallah ❤️<br>من شوشو</div>
+</main>
+
+<script>
+const PASS="Baba";
+function unlock(){
+  const value=document.getElementById("password").value;
+  if(value===PASS){
+    document.getElementById("lock").classList.add("hidden");
+    document.getElementById("site").classList.remove("hidden");
+    localStorage.setItem("abdallah_unlocked","1");
+    startHearts();
+  }else{
+    document.getElementById("error").textContent="الباسورد غلط يا عبدالله 😌❤️";
+  }
+}
+document.getElementById("password").addEventListener("keydown",e=>{if(e.key==="Enter")unlock()});
+
+function updateCounter(){
+  const start=new Date(2026,6,7,0,0,0);
+  let diff=Math.max(0,Date.now()-start.getTime());
+  const days=Math.floor(diff/86400000); diff%=86400000;
+  const hours=Math.floor(diff/3600000); diff%=3600000;
+  const minutes=Math.floor(diff/60000); diff%=60000;
+  const seconds=Math.floor(diff/1000);
+  document.getElementById("days").textContent=days;
+  document.getElementById("hours").textContent=hours;
+  document.getElementById("minutes").textContent=minutes;
+  document.getElementById("seconds").textContent=seconds;
+}
+setInterval(updateCounter,1000); updateCounter();
+
+const audio=document.getElementById("audio"), play=document.getElementById("play"), disc=document.getElementById("disc");
+play.onclick=()=>{
+  if(audio.paused){
+    audio.play().then(()=>{play.textContent="❚❚";disc.style.animationPlayState="running";}).catch(()=>{
+      document.getElementById("audioNote").textContent="ملف الأغنية غير موجود داخل الموقع حاليًا — أضيفي ملف MP3 باسم motmana-angham.mp3 داخل assets.";
+    });
+  }else{audio.pause();play.textContent="▶";disc.style.animationPlayState="paused";}
+};
+audio.onended=()=>{play.textContent="▶";disc.style.animationPlayState="paused"};
+
+function startHearts(){
+  const box=document.getElementById("hearts");
+  for(let i=0;i<22;i++){
+    const h=document.createElement("span"); h.className="heart"; h.textContent=Math.random()>.25?"♥":"♡";
+    h.style.left=Math.random()*100+"%"; h.style.animationDelay=(-Math.random()*8)+"s";
+    h.style.animationDuration=(6+Math.random()*7)+"s"; h.style.fontSize=(12+Math.random()*22)+"px";
+    box.appendChild(h);
+  }
+}
+startHearts();
+</script>
+</body>
+</html>
